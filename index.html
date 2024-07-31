@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+DK+Loopet:wght@100..400&family=Playwrite+NO:wght@100..400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+<script>
+    function scrollToSection() {
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<script>
+ function filterSelection(category, element) {
+    var items = document.getElementsByClassName('menu-category');
+    
+    // Hide all items
+    for (var i = 0; i < items.length; i++) {
+        items[i].style.display = 'none';
+    }
+    
+    // Show selected items
+    var selectedItems = document.getElementsByClassName(category);
+    for (var i = 0; i < selectedItems.length; i++) {
+        selectedItems[i].style.display = 'block';
+    }
+    
+    // Remove 'active1' class from all buttons
+    var buttons = document.querySelectorAll('#myBtnContainer .btn');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('active1');
+        btn.parentNode.style.backgroundColor = ''; // Reset background color of the parent div
+        btn.style.color = ''; // Reset text color
+        btn.style.padding = ''; // Reset padding
+    });
+    
+    // Add 'active1' class to the clicked button
+    element.classList.add('active1');
+    element.parentNode.style.backgroundColor = 'rgb(220, 84, 0)'; // Set the background color of the parent div
+    element.style.color = 'white'; // Set the text color
+ }
+
+// Initialize by displaying the 'starter' category
+window.onload = function() {
+    filterSelection('starter', document.querySelector('button[onclick*="starter"]'));
+}
+
+
+</script>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-black d-flex fixed-top">
+                <div class="container-fluid">
+                    <img src="logo.png" alt="" class="logo" >
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-3 text-white" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-3 text-white" href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-3 text-white" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#price">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-3 text-white" href="#reserve">Reservation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section id="home">
+            <div class="row typer-row">
+                <img src="bg3.jpg" alt="">
+                <div class="centered">
+                    <h1 class="text-white"> <strong class="dinner"> Enjoy our food & enhance your health </strong></h1>
+                    <p class="appear">Accidental Appearances</p>
+                    <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, suscipit quo quae.</p>
+                    <button class="book">BOOK MY TABLE</button>
+                    <div class="scroll-button" onclick="scrollToSection()"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="row about px-5">
+                <div class="col-12 col-md-6">
+                    <h1 class="about-head">About Us</h1>
+                    <h4 class="about-head">IT STARTED, QUITE SIMPLY, LIKE THIS...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quaerat qui vitae ratione fugit accusamus provident. Incidunt accusamus explicabo quaerat officiis pariatur saepe.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis ea ipsa, omnis mollitia nemo incidunt totam inventore, earum facilis possimus perspiciatis illum necessitatibus quos ex. Voluptatem enim debitis delectus! Numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo non deleniti libero est tempore possimus consequatur voluptate dolore aliquam ratione nesciunt earum animi omnis, nostrum iure.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis amet temporibus facere illo illum ipsum laboriosam ullam itaque veritatis aliquid nam quia exercitationem.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="about-main.jpg" alt="" class="about-img">
+                    <img src="about-img2.jpg" alt="" class="about-img2">
+                </div>
+            </div>
+
+            <div class="row bg-black special">
+                <div class="card bg-black">
+                    <img src="special-img.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h1 class="about-head text-center">Today's Special</h1>
+                        <p class="text-center text-white fs-5 my-5 special-lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, alias! Repellendus praesentium consectetur quod. <br> Officia autem, sapiente ipsa porro eligendi perspiciatis, culpa vero nihil eveniet repudiandae qui et aliquid nemo?</p>
+                        <div class="col-12 col-md-4 col-lg-4 special1 specially" id="card1">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-img-top-wrapper">
+                                    <img src="item1.jpg" class="card-img-top item1" alt="...">
+                                </div>
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4 class="border-3 border-bottom text-white">ITALIAN PIZZA</h4>
+                                        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 special2 specially" id="card2">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-img-top-wrapper">
+                                    <img src="item2.jpg" class="card-img-top item2" alt="...">
+                                </div>
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4 class="border-3 border-bottom text-white">SALMON STEAK</h4>
+                                        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 special3 specially">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-img-top-wrapper">
+                                    <img src="item3.jpg" class="card-img-top item3" alt="...">
+                                </div>
+                                <div class="middle">
+                                    <div class="text">
+                                        <h4 class="border-3 border-bottom text-white">VEG. ROLL</h4>
+                                        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="row menu-row my-5">
+                <h1 class="text-center menu about-head">Our Menu</h1>
+                <p class="text-center menu-lorem">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            </div>
+
+
+            <div class="row menu-items px-2" id="myBtnContainer">
+                <div class="col-md-3 starters">
+                    <button class="btn active1 fs-4 border-0 bg-transparent text-white fw-bold" onclick="filterSelection('starter', this)">STARTER</button>
+                    <i class='fas fa-drumstick-bite d-block px-4 fs-1'></i>
+                </div>
+                <div class="col-md-3 main-dish">
+                    <button class="btn fs-4 border-0 bg-transparent fw-bold" onclick="filterSelection('main-dish1', this)">MAIN DISHES</button>
+                    <i class="fa fa-cutlery d-block px-5 fs-1"></i>
+                </div>
+                <div class="col-md-3 dessert">
+                    <button class="btn fs-4 border-0 bg-transparent fw-bold" onclick="filterSelection('desserts', this)">DESSERTS</button>
+                    <i class='fa fa-ice-cream d-block px-5 fs-1'></i>
+                </div>
+                <div class="col-md-3 drinks">
+                    <button class="btn fs-4 border-0 bg-transparent fw-bold" onclick="filterSelection('drinks1', this)">BEVERAGES</button>
+                    <i class='fas fa-glass-cheers d-block px-5 fs-1'></i>
+                </div>
+                <hr>
+            </div>
+        
+            <div class="menu-category starter">
+                <div class="row menu-items2 pb-5">
+                    <div class="col-12 col-md-6 starter-item col11">
+                        <img src="menu3.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">GARLIC BREAD --------------$8.5</h5>
+                        <p class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="col-12 col-md-6 starter-item col11">
+                        <img src="menu2.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">MIXED SALAD----------------$25</h5>
+                        <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col starter-item col11">
+                            <img src="menu1.jpg" alt="" class="menu1">
+                            <h5 class="d-inline garlic about-head">BBQ CHICKEN WINGS---------$10</h5>
+                            <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="menu-category main-dish1">
+                <div class="row menu-items2 pb-5">
+                    <div class="col-12 col-md-6 main-dish-item col11">
+                        <img src="main-dish1.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">MEAT FEAST PIZZA --------------$5</h5>
+                        <p class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="col-12 col-md-6 main-dish-item col11">
+                        <img src="main-dish2.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">SPICY CHICKEN BALLS----------------$7</h5>
+                        <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col main-dish-item col11">
+                            <img src="main-dish3.jpg" alt="" class="menu1">
+                            <h5 class="d-inline garlic about-head">TIKKA MASALA---------$15</h5>
+                            <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="menu-category desserts">
+                <div class="row menu-items2 pb-5">
+                    <div class="col-12 col-md-6 desserts-item col11">
+                        <img src="dessert1.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">CHOCOLATE FUDGE CAKE --------------$15</h5>
+                        <p class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="col-12 col-md-6 desserts-item col11">
+                        <img src="dessert2.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">ICECREAM----------------$7</h5>
+                        <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col desserts-item col11">
+                            <img src="dessert3.jpg" alt="" class="menu1">
+                            <h5 class="d-inline garlic about-head">BROWNIES---------$10</h5>
+                            <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="menu-category drinks1">
+                <div class="row menu-items2 pb-5">
+                    <div class="col-12 col-md-6 drinks-item col11">
+                        <img src="drink1.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">SOFT DRINKS --------------$15</h5>
+                        <p class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="col-12 col-md-6 drinks-item col11">
+                        <img src="drink2.jpg" alt="" class="menu1">
+                        <h5 class="d-inline garlic about-head">TEA----------------$7</h5>
+                        <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col drinks-item col11">
+                            <img src="dessert3.jpg" alt="" class="menu1">
+                            <h5 class="d-inline garlic about-head">COFFEE---------$10</h5>
+                            <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi voluptates id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="row team my-4 bg-black">
+                <img src="fruit-bg.jpg" alt="" class="fruit">
+                <div class="centered2">
+                    <h1 class="about-head">Our Team</h1>
+                    <p class="text-center text-white px-5 fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, alias! Repellendus praesentium consectetur quod. Officia autem, sapiente ipsa porro eligendi perspiciatis, culpa vero nihil eveniet repudiandae qui et aliquid nemo?</p>
+                    <div class="card-group my-5">
+                        <div class="card card11">
+                          <img src="staff1.jpg" class="card-img-top img" alt="...">
+                          <div class="card-body cardbody11">
+                            <h3 class="card-title ">John Doggett</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer footer">
+                             <i class="fa fa-facebook-f fb"></i>
+                             <i class="fa fa-twitter twit mx-2"></i>
+                             <i class="fa fa-linkedin-in in"></i>
+                          </div>
+                        </div>
+                        <div class="card card11 mx-3">
+                          <img src="staff2.jpg" class="card-img-top img" alt="...">
+                          <div class="card-body cardbody11">
+                            <h3 class="card-title ">Jeffrey Spender</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          </div>
+                          <div class="card-footer footer">
+                            <i class="fa fa-facebook-f fb"></i>
+                             <i class="fa fa-twitter twit mx-2"></i>
+                             <i class="fa fa-linkedin-in in"></i>
+                          </div>
+                        </div>
+                        <div class="card11">
+                          <img src="staff3.jpg" class="card-img-top img" alt="...">
+                          <div class="card-body cardbody11">
+                            <h3 class="card-title">Monica Reyes</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          </div>
+                          <div class="card-footer footer">
+                            <i class="fa fa-facebook-f fb"></i>
+                             <i class="fa fa-twitter twit mx-2"></i>
+                             <i class="fa fa-linkedin-in in"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="row my-5 mx-2 gallery-row">
+                <h1 class="text-center about-head">Our Gallery</h1>
+                <p class="fs-5 text-center">There are many variations of passages of Lorem Ipsum available</p>
+                <div class="col-md-8 col22">
+                    <img src="gallery_01.jpg" alt="" class="gallery1">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gall2 col22">
+                    <img src="gallery_02.jpg" alt="" class="gallery2">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row second-gallery mx-2">
+                <div class="col-md-4 gall3 col22">
+                    <img src="gallery_03.jpg" alt="" class="gallery3">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gall4 col22">
+                    <img src="gallery_04.jpg" alt="" class="gallery4">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gall5 col22">
+                    <img src="gallery_05.jpg" alt="" class="gallery5">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-2 mx-2">
+                <div class="col-md-4 col22">
+                    <img src="gallery_06.jpg" alt="" class="gallery6">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 gall7 col22">
+                    <img src="gallery_07.jpg" alt="" class="gallery7">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-2">
+                <div class="col-md-4 col22">
+                    <img src="gallery_08.jpg" alt="" class="gallery8">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gall9 col22">
+                    <img src="gallery_09.jpg" alt="" class="gallery9">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gall10 col22">
+                    <img src="gallery_10.jpg" alt="" class="gallery10">
+                    <div class="middle1">
+                        <div class="text1">
+                            <a href="" style="text-decoration: none; color: rgb(220, 84, 0);">  <i class="fa fa-search d-inline mx-2" style="font-size: 20pt;"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="row my-5 blog-row">
+                <div class="card">
+                    <img class="card-img blog-img" src="blog-bg.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h1 class="card-text text-center about-head">Our Blogs</h1>
+                        <div class="row blogging-cards px-5 my-5">
+                            <div class="col-md-6">
+                                <div class="card card-blog mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="blog1.jpg" class="img-fluid rounded-start blog1" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                            <h6 class="card-title text-center pt-4 text-muted">25 NOVEMBER, 2014</h6>
+                                            <h5 class="px-5 text-center border-1 border-top border-bottom about-head1">LATEST RECIPES JUST IN!</h5>
+                                            <p class="card-text text-center"><small class="text-muted">BY JOHN DOGGETT</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card card-blog mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="blog2.jpg" class="img-fluid rounded-start blog2" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                            <h6 class="card-title text-center pt-4 text-muted">1 Feburary, 2023</h6>
+                                            <h5 class="text-center px-5 border-1 border-top border-bottom about-head1">NEW RECRUITS HAVE ARRIVED!</h5>
+                                            <p class="card-text text-center"><small class="text-muted">BY JEFFREY SPENDER</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-5">
+                            <div class="col-md-6">
+                                <div class="card card-blog mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="blog3.jpg" class="img-fluid rounded-start blog3" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6 class="card-title text-center pt-4 text-muted">23 JANUARY, 2017</h6>
+                                                <h5 class="px-5 text-center border-1 border-top border-bottom about-head1">BAKING TIPS FROM THE PROS!</h5>
+                                                <p class="card-text text-center"><small class="text-muted">BY MONICA REYES</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card card-blog mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="blog4.jpg" class="img-fluid rounded-start blog4" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6 class="card-title text-center pt-4 text-muted">25 DECEMBER, 2020</h6>
+                                                <h5 class="px-5 text-center border-1 border-top border-bottom about-head1">ALL YOUR EGGS BELONG TO US!</h5>
+                                                <p class="card-text text-center"><small class="text-muted">BY JOHN DOGGETT</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="book1 text-white fw-bold justify-content-center my-5">VIEW THE BLOG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="price">
+            <div class="row pricing-row">
+                <h1 class="text-center about-head">PRICING</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card pricing-cards pb-3">
+                            <div class="card-header">
+                                <img src="price1.png" class="card-img-top p1" alt="...">
+                                <h4 class="text-center text-white my-2  about-head">BRONZE</h4>
+                            </div>
+                            <div class="card-header1">
+                                <h3 class="text-center fw-bold my-2">$60/ <span class="fs-3" style="color: rgb(220, 84, 0);">month</span> </h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-close"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-close"></i>
+                                    <p class="card-text d-inline"> 2GB Storage</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-close"></i>
+                                    <p class="card-text d-inline"> Offline Work</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                            </div>
+                            <button class="purchase mx-5 fs-5 border-0">PURCHASE NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card pricing-cards pb-3">
+                            <div class="card-header">
+                                <img src="price2.png" class="card-img-top p2" alt="...">
+                                <h4 class="text-center text-white my-2  about-head">SILVER</h4>
+                            </div>
+                            <div class="card-header1">
+                                <h3 class="text-center fw-bold my-2">$80/ <span class="fs-3" style="color: rgb(220, 84, 0);">month</span> </h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-close"></i>
+                                    <p class="card-text d-inline"> 2GB Storage</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-close"></i>
+                                    <p class="card-text d-inline"> Offline Work</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                            </div>
+                            <button class="purchase mx-5 fs-5 border-0">PURCHASE NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card pricing-cards pb-3">
+                            <div class="card-header">
+                                <img src="price3.png" class="card-img-top p3" alt="...">
+                                <h4 class="text-center text-white  my-2 about-head">PLATINUM</h4>
+                            </div>
+                            <div class="card-header1">
+                                <h3 class="text-center fw-bold my-2">$120/ <span class="fs-3" style="color: rgb(220, 84, 0);">month</span> </h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> 2GB Storage</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> Offline Work</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <p class="card-text d-inline"> One Website</p>
+                                </div>
+                            </div>
+                            <button class="purchase mx-5 fs-5 border-0">PURCHASE NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reserve">
+            <div class="row my-5 mx-5">
+                <h1 class="text-center about-head">RESERVATIONS</h1>
+                <h5 class="text-center my-3">BOOKING FORM</h5>
+                <p class="text-center">Please fill out all the REQUIRED* fields. Thanks!</p>
+                <form action="" class="my-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Name" placeholder="Name">
+                        <input type="email" class="form-control" aria-label="Email" placeholder="Email ID">
+                    </div>
+                    <div class="input-group my-5">
+                        <input type="tel" aria-label="Contact" class="form-control" placeholder="Contact No:">
+                        <select class="form-select form-control" aria-label="Default select example">
+                            <option selected>No: of Person</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="input-group my-5">
+                        <input type="text" aria-label="Date" class="form-control" placeholder="Date">
+                        <input type="text" aria-label="Time" class="form-control" placeholder="Time">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="table fs-5">BOOK MY TABLE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="row bg-black news-row">
+                <div class="card bg-black">
+                    <img src="newletter.jpg" alt="" class="news-img">
+                    <div class="card-img-overlay py-5">
+                        <h1 class="text-center  about-head">Our Newsletter</h1>
+                        <p class="text-center text-white mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="d-flex justify-content-center mt-5">
+                            <input type="email" class="email2" style="width: 50%;" name="" id="" placeholder="Enter Your Email ID">
+                            <span>
+                                <i class="fas fa-paper-plane plane"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-black footer-row">
+                <div class="card bg-black">
+                    <img src="footer-img.jpg" alt="" class="footer-img">
+                    <div class="card-img-overlay py-5">
+                        <img src="logo2.png" alt="" class="logo2">
+                        <div class="row my-5 mx-5">
+                            <div class="col-md-3">
+                                <h3 class=" about-head">About Us</h3> 
+                                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore aliquid suscipit repellat quisquam illum aliquam dicta.</p>
+                            </div>
+                            <div class="col-md-3 listing" style="list-style: none;">
+                                <h3 class=" about-head"> New Menu</h3>
+                                <li class="text-white">Italian Sandwich </li>
+                                <li class="text-white">Double Dose</li>   
+                                <li class="text-white">Spicy Thai Noodles</li>   
+                                <li class="text-white">Triple Truffle Trotters</li>
+                            </div>
+                            <div class="col-md-3 listing">
+                                <h3 class=" about-head"> Contact Us</h3>
+                                <div style="color: white;">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <p class="d-inline">123, Main Street, New York, USA</p>
+                                </div>
+                                <div style="color: white;">
+                                    <i class="fa fa-mobile-phone"></i>
+                                    <p class="d-inline">111-222-333-55</p>
+                                </div>
+                                <div style="color: white;">
+                                    <i class="fa fa-envelope"></i>
+                                    <p class="d-inline">info@foodfunday.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 listing">
+                                <h3 class=" about-head">Opening Hours</h3>
+                                <h6 class="text-white">Monday - Thursday</h6>
+                                <p class="text-muted text-white">11 AM to 9PM</p>
+                                <h6 class="text-white">Friday - Saturday</h6>
+                                <p class="text-muted text-white">11 AM to 5PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer1">
+                <p class="copyright text-center">&copy;FoodFunday -<strong> All Rights Reserved!</strong></p>
+                <p class="text-center">Designed By <span style="color: black">Natasha Asnani</span></p>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const navLinks = document.querySelectorAll('.nav-link');
+      
+          navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+              navLinks.forEach(link => link.classList.remove('active'));
+              this.classList.add('active');
+            });
+      
+            // Preserve active state on page load based on URL
+            if (window.location.href.includes(link.getAttribute('href'))) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
+      
+</body>
+</html>
