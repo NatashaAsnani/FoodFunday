@@ -2,12 +2,11 @@
     position: relative;
     overflow-x: hidden;
 }
-.nav-link.active {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.logo{
+    width: 200px;
 }
+
 .nav-link:hover{
     border-bottom: 2px solid rgb(220, 84, 0);
     padding-left: 20px !important;
@@ -21,11 +20,13 @@
     border-bottom: 2px solid rgb(220, 84, 0);
 
 }
-.logo{
-    width: 230px;
-}
+
 .typer-row{
     background-color: black;
+}
+
+.overlay1{
+    margin-top: 100px;
 }
 .food{
     font-weight: 700;
@@ -33,28 +34,23 @@
     color: rgb(220, 84, 0);
 }
 
-.centered {
-    position: absolute;
-    top: 230px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
 .dinner{
     font-weight: 700;
     font-size: 50pt;
 }
+
 .appear{
     color: rgb(220, 84, 0);
     font-size: xx-large;
     font-weight: 500;
     text-align: center;
 }
+
 .lorem{
     color: white;
     font-size: x-large;
 }
+
 .book{
     background-color: rgb(220, 84, 0);
     border: none;
@@ -64,12 +60,14 @@
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: bold;
-    justify-content: center;
+    font-size: larger;
 }
+
 .book:hover{
     background-color: transparent;
     border: 2px solid rgb(220, 84, 0);
 }
+
 .scroll-button {
     position: absolute;
     top: 390px;
@@ -112,7 +110,6 @@
         opacity: 0;
     }
 }
-
 .about{
     background-color: gainsboro;
     padding-top: 50px;
@@ -137,46 +134,47 @@
 
 .special1{
     position: absolute;
-    top: 300px;
+    /* top: 300px; */
     left: 50px;
 }
 
 .special2{
     position: absolute;
-    top: 300px;
+    /* top: 300px; */
     left: 450px;
 }
 
 .special3{
     position: absolute;
-    top: 300px;
+    /* top: 300px; */
     left: 840px;
 }
 
 .item1{
-    width: 350px;
-    height: 450px;
+    /* width: 350px; */
+    /* height: 450px; */
     border: 5px solid white;
 }
 
 .item2{
-    width: 350px;
-    height: 450px;
+    /* width: 350px; */
+    /* height: 450px; */
     border: 5px solid white;
 }
 
 .item3{
-    width: 350px;
-    height: 450px;
+    /* width: 350px; */
+    /* height: 450px; */
     border: 5px solid white;
 }
+
 
 .middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 82%;
-    left: 60%;
+    top: 78%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -197,13 +195,13 @@
     opacity: 1;
 }
 
+
 .menu{
     color: rgb(220, 84, 0);
 }
 
 .menu-lorem{
     font-size: larger;
-    width: 1200px;
     padding-left: 100px;
     padding-right: 50px;
 }
@@ -214,76 +212,54 @@
 
 .starters{
     background-color: rgb(220, 84, 0);
-    padding: 0%;
     padding-left: 80px;
-    padding-right: 0;
     padding-top: 10px;
     padding-bottom: 20px;
     color: white;
 }
 .main-dish{
-    padding: 0%;
     padding-left: 80px;
-    padding-right: 0;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .dessert{
-    padding: 0%;
     padding-left: 80px;
-    padding-right: 0;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .drinks{
-    padding: 0%;
     padding-left: 80px;
-    padding-right: 0;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .menu-items2{
     background-color: gainsboro;
-    position: relative;
 }
 
 .menu1{
     border-radius: 50%;
     border: 10px solid white;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .garlic{
-    padding-left: 15px;
     color: rgb(220, 84, 0);
 }
 .lorem1{
     text-align: justify;
-    width: 430px;
-    padding-left: 120px;
-    margin-top: -50px;
+    /* width: 430px; */
+    padding-left: 105px;
+    margin-top: -20px;
 }
 
 .lorem2{
     text-align: justify;
-    width: 430px;
-    padding-left: 120px;
-    margin-top: -50px;
-}
-
-.menu-category {
-    display: none;
-}
-
-.menu-category.starter {
-    display: block;
-}
-
-.show {
-    display: block !important;
+    /* width: 430px; */
+    padding-left: 105px;
+    margin-top: -20px;
 }
 
 .btn:focus {
@@ -291,27 +267,23 @@
     box-shadow: none;
 }
 
-.active1 i {
-    color: white !important;
-}
-
 .team{
     position: relative;
 }
-
+/* 
 .fruit{
     height: 900px;
     width: 1500px;
-}
+} */
 
-.centered2 {
+/* .centered2 {
     position: absolute;
     top: 50px;
     left: 10px;
     text-align: center;
     height: 150px;
     width: 1230px;
-}
+} */
 
 .fb{
     border: 1px solid;
@@ -358,7 +330,7 @@
   }
 
   .card11:hover .cardbody11 {
-    color: white !important;
+    color: white;
   }
 
 
@@ -367,13 +339,13 @@
   }
 
   .card11:hover .img {
-    filter: brightness(70%); /* Slightly reduce brightness */
+    filter: brightness(70%);
   }
 
   .card11{
     border: none;
     outline: none;
-    width: 400px !important;
+    width: 400px;
   }
 
   .gallery1{
@@ -458,9 +430,7 @@
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    left: 50%;
     text-align: center;
 }
 
@@ -475,9 +445,7 @@
 .col22:hover .middle1 {
     opacity: 1;
 }
-.blog-img{
-    height: 750px;
-}
+
 .book1{
     background-color: rgb(220, 84, 0);
     border: none;
@@ -490,7 +458,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* width: 300px; */
 }
 .book1:hover{
     background-color: transparent;
@@ -502,7 +469,7 @@
 }
 
 .p1, .p2, .p3{
-    width: 210px;
+    width: 220px;
     padding-left: 150px;
 }
 .card-header{
@@ -513,11 +480,18 @@
     background-color: rgb(237, 234, 234);
     padding: 15px;
 }
+
+.p-card2{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.p-card2:hover{
+    box-shadow: none !important;
+}
 .purchase{
     background-color: rgb(220, 84, 0);
     color: white;
     padding: 10px;
-    width: 300px;
 }
 .pricing-cards{
     transition: transform 0.3s ease;
@@ -526,6 +500,7 @@
     transform: translateY(-10px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .form-select:focus{
     box-shadow: none;
     outline: none;
@@ -538,8 +513,8 @@
     font-weight: bold; 
     color: white; 
     border: none;
-    padding: 20px;
-    width: 250px;
+    padding: 15px;
+    /* width: 250px; */
     background-color: rgb(220, 84, 0);
 }
 .table:hover{
@@ -547,7 +522,6 @@
     background-color: white;
     border: 2px solid rgb(220, 84, 0);
 }
-
 
 .plane{
     color: white;
@@ -572,7 +546,8 @@
 }
 
 .logo2{
-    padding-left: 400px;
+    padding-left: 480px;
+    width: 780px;
 }
 
 .about-head{
@@ -589,24 +564,15 @@
     color: rgb(220, 84, 0);
 }
 
-
-
-
-
-
-
-
-
 @media (min-width:320px) and (max-width:480px){
     .logo{
         width: 100px;
     }
-    .centered {
-        top: 130px;
-        left: 50%;
-        text-align: center;
-      }
     
+    .overlay1{
+        margin-top: 30px;
+    }
+
     .dinner{
         font-size: large;
     }
@@ -614,22 +580,26 @@
     .food{
         font-size: medium;
     }
+
     .appear{
         color: rgb(220, 84, 0);
         font-size: small;
     }
+
     .lorem{
         color: white;
         font-size: x-small;
         padding-left: 80px;
         padding-right: 80px;
     }
+
     .book{
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
+
     .scroll-button{
         display: none;
     }
@@ -637,6 +607,7 @@
     .about{
         height: fit-content;
     }
+
     .about-img{
         width: 250px;
     }
@@ -650,23 +621,24 @@
     }
 
     .menu-row{
-        margin-top: 1500px !important;
+        margin-top: 1600px !important;
     }
     
     .special1{
         top: 270px;
-        left: 10px;
+        left: 0px;
     }
     
     .special2{
         top: 750px;
-        left: 10px;
+        left: 0px;
     }
     
     .special3{
         top: 1230px;
-        left: 10px;
+        left: 0px;
     }
+
     .special-lorem{
         font-size: medium !important;
     }
@@ -682,14 +654,17 @@
     .item3{
         width: fit-content;
     }
+
     .menu-lorem{
         padding-left: 50px;
         padding-right: 50px;
     }
+
     .starters{
         padding-left: 0px;
         text-align: center;
     }
+
     .main-dish{
         padding-left: 0px;
         text-align: center;
@@ -699,116 +674,383 @@
         padding-left: 0px;
         text-align: center;
     }
+
     .drinks{
         padding-left: 0px;
         text-align: center;
     }
 
-    .lorem1{
-        padding-left: 115px;
-        padding-right: 40px;
-    }
-    
-    .lorem2{
-        padding-left: 115px;
-        padding-right: 40px;
-    }
     .fruit{
         height: fit-content;
     }
-    .centered2{
-        left: 0px;
-
-    }
-    .centered2 p{
-        font-size: smaller !important;
-    }
+    
     .card11{
         margin-left: 0px !important;
         margin-right: 0px !important;
         width: 380px !important;
     }
+
+    .team-heading{
+        text-align: center;
+    }
+
+    .team-card{
+        height: 350px;
+    }
+
     .gallery-row{
-        margin-top: 2000px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 1900px !important;
     }
 
     .blog-row{
         margin-top: 200px;
     }
+
+    .gallery1{
+        width: 390px;
+        height: 300px;
+    }
+
+    .gall1{
+        padding-left: 0px;
+    }
+    
+    .gall2{
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    
+    .gallery2{
+        width: 390px;
+    }
+
+    .second-gallery{
+        margin-left: 0px !important;
+    }
+
+    .third-gallery{
+        margin-left: 0px !important;
+    }
+
+    .fourth-gallery{
+        margin-left: 0px !important;
+    }
+
+    .gallery3{
+        width: 390px;
+        margin-top: 20px;
+    }
+
+    .gall3{
+        padding-left: 0px !important;
+    }
+    
+    .gallery4{
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .gallery5{
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .gall4{
+        padding-left: 0px;
+    }
+    
+    .gall5{
+        padding-left: 0px;
+    }
+    
+    .gallery6{
+        width: 390px;
+        margin-top: 20px;
+    }
+
+    .gall6{
+        padding-left: 0px !important;
+    }
+    
+    .gall7{
+        padding-left: 0px;
+    }
+    
+    .gallery7{
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .gallery8{
+        width: 390px;
+        margin-top: 20px;
+    }
+
+    .gall8{
+        padding-left: 0px !important;
+    }
+    
+    .gallery9{
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .gallery10{
+        width: 390px;
+        margin-top: 20px;
+    }
+    
+    .gall9{
+        padding-left: 0px;
+    }
+    
+    .gall10{
+        padding-left: 0px;
+    }
+
+    .blog-img{
+        height: 2150px;
+    }
+     
+    .news-img{
+        height: 320px;
+    }
+
+    .footer-img{
+        height: 800px;
+    }
+
+    .logo2{
+        padding-left: 80px !important;
+        width: 300px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .logo{
+        width: 100px;
+    }
+
+    .overlay1{
+        margin-top: 50px;
+    }
+    
+    .dinner{
+        font-size: x-large;
+    }
+
+    .appear{
+        font-size: medium;
+    }
+
+    .book{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .scroll-button{
+        display: none;
+    }
+    
+    .about{
+        height: fit-content;
+    }
+
+    .about-img{
+        width: 300px;
+    }
+    
+    .about-img2{
+        right: 140px;
+    }
+
+    .specially{
+        max-width: 600px;
+    }
+
+    .special{
+        margin-top: 0px;
+        /* max-width: 300px !important; */
+    }
+
+    .menu-row{
+        margin-top: 1500px !important;
+    }
+    
+    .special1{
+        top: 400px;
+        left: 5px;
+    }
+    
+    .special2{
+        top: 750px;
+        left: 0px;
+    }
+    
+    .special3{
+        top: 1100px;
+        left: 0px;
+    }
+
+    .special-lorem{
+        font-size: x-large !important;
+    }
+
+    /* .item1{
+        max-width: 300px;
+        height: 350px;
+    } */
+    
+    /* .item2{ */
+        /* position: absolute;
+        left: 300px;
+        margin-top: -350px; */
+        /* margin-top: 10px; */
+        /* max-width: 300px;
+        height: 350px; */
+    /* } */
+    
+    /* .item3{
+        max-width: 300px;
+        height: 350px;
+    }
+
+    .middle{
+        bottom: 0px !important;
+        left: 80%;
+    } */
+
+    .menu-lorem{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .starters{
+        /* padding-left: 0px; */
+        text-align: center;
+    }
+
+    .main-dish{
+        /* padding-left: 0px; */
+        text-align: center;
+    }
+
+    .dessert{
+        /* padding-left: 0px; */
+        text-align: center;
+    }
+
+    .drinks{
+        /* padding-left: 0px; */
+        text-align: center;
+    }
+
+    .lorem1{
+        /* padding-left: 115px; */
+        /* padding-right: 40px; */
+    }
+    
+    .lorem2{
+        /* padding-left: 115px; */
+        /* padding-right: 40px; */
+    }
+
+    .fruit{
+        height: fit-content;
+    }
+    
+    .card11{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 380px !important;
+    }
+
+    .gallery-row{
+        margin-top: 2000px !important;
+    }
+
+    .blog-row{
+        margin-top: 1000px;
+    }
+
     .gallery1{
         width: 320px;
         height: 300px;
-      }
+    }
     
-      .gall2{
+    .gall2{
         padding-left: 13px;
         margin-top: 20px;
-      }
+    }
     
-      .gallery2{
+    .gallery2{
         width: 320px;
-      }
+    }
 
-      .gallery3{
+    .gallery3{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gallery4{
+    .gallery4{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gallery5{
+    .gallery5{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gall4{
+    .gall4{
         padding-left: 13px;
-      }
+    }
     
-      .gall5{
+    .gall5{
         padding-left: 13px;
-      }
+    }
     
-      .gallery6{
+    .gallery6{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gall7{
+    .gall7{
         padding-left: 13px;
-      }
+    }
     
-      .gallery7{
+    .gallery7{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gallery8{
+    .gallery8{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gallery9{
+    .gallery9{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gallery10{
+    .gallery10{
         width: 320px;
         margin-top: 20px;
-      }
+    }
     
-      .gall9{
+    .gall9{
         padding-left: 13px;
-      }
+    }
     
-      .gall10{
+    .gall10{
         padding-left: 15px;
-      }
-
+    }
+/* 
       .blog-img{
         height: 2150px;
       }
@@ -817,17 +1059,17 @@
         margin-top: 40px !important;
       }
     .pricing-row{
-        margin-top: 100px;
+        margin-top: 500px;
     }
 
     .footer-row{
         margin-top: 2px;
-    }
+    } */
     .news-img{
         height: 320px;
     }
 
-    .footer-img{
+    /* .footer-img{
         height: 950px;
     }
 
@@ -841,1390 +1083,5 @@
 
     .purchase{
         width: 250px;
-    }
+    }  */
 }
-/* @media (min-width: 576px) and (max-width: 767.98px){
-    .sliders{
-        margin-top: 60px;
-    }
-    .laptop{
-        width: 510px;
-    }
-    #myBtnContainer{
-        padding-left: 130px;
-    }
-    .footer-icon{
-        padding-left: 200px;
-    }
-    .line8{
-        left: 50px;
-        width: 500px;
-    }
-}
-@media (min-width: 768px) and (max-width: 991.98px){
-    .laptop{
-        width: 380px;
-    }
-    #myBtnContainer{
-        padding-left: 200px;
-    }
-    .footer-icon{
-        padding-left: 300px;
-    }
-    .line8{
-        left: 90px;
-        width: 600px;
-    }
-}
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .laptop{
-        width: 480px;
-    }
-    #myBtnContainer{
-        padding-left: 350px;
-    }
-    .footer-icon{
-        padding-left: 400px;
-    }
-    .line8{
-        left: 140px;
-        width: 700px;
-    }
-}
-@media (min-width: 1400px){
-    .laptop{
-        width: 650px;
-    }
-    .footer-icon{
-        padding-left: 600px;
-    }
-    .line8{
-        left: 350px;
-        width: 700px;
-    }
-}
-@media (min-width: 1500px){
-    .caption h1{
-        font-size: 45pt;
-    }
-    .caption p{
-        font-size: 25pt;
-    }
-    .read{
-        font-size: x-large;
-    }
-    .about h3{
-        font-size: 25pt;
-    }
-    .about p{
-        font-size: larger;
-    }
-    .ptags p{
-        font-size: 18pt;
-    }
-    .more{
-        font-size: x-large;
-    }
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 25pt;
-    }
-    .before-col p{
-        font-size: 18pt;
-    }
-    .call-to-action {
-        font-size: 16pt;
-    }
-    .call-to-action h3{
-        font-size: 28pt;
-    }
-    .service h3, .testimonial h3, .price h3, .FAQ h3, .team-members h3, .footer h3{
-        font-size: 25pt;
-    }
-    .service p, .testimonial p, .price p, .FAQ p, .team-members p, .footer p{
-        font-size: larger;
-    }
-    .line2{
-        left: 220px;
-    }
-    .line3{
-        left: 150px;
-    }
-    .card h5{
-        font-size: xx-large;
-    }
-    .card h6{
-        font-size: larger;
-    }
-    .card p{
-        font-size: x-large;
-    }
-    .firstcol p{
-        font-size: 16pt;
-    }
-    .laptop{
-        width: 710px;
-    }
-    #myBtnContainer{
-        padding-left: 600px;
-    }
-    #myBtnContainer .btn{
-        font-size: x-large;
-    }
-   .card-footer a{
-    font-size: larger;
-   }
-    .card-body li{
-        font-size: x-large;
-    }
-    .acc-button, .acc-body{
-        font-size: x-large;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 21rem;
-    }
-    .emp1{
-        height: 312px;
-    }
-    .emp4{
-        height: 312px;
-    }
-    .middle1{
-        bottom: 110px;
-    }
-    .contacting{
-        font-size: larger;
-    }
-    .line7{
-        left: 170px;
-    }
-   
-    .footer-icon{
-        padding-left: 650px;
-    }
-    .line8{
-        left: 400px;
-        width: 700px;
-    } 
-}
-@media (min-width: 1600px){
-    .caption h1{
-        font-size: 45pt;
-    }
-    .caption p{
-        font-size: 25pt;
-    }
-    .read{
-        font-size: x-large;
-    }
-    .about h3{
-        font-size: 25pt;
-    }
-    .about p{
-        font-size: larger;
-    }
-    .ptags p{
-        font-size: 18pt;
-    }
-    .more{
-        font-size: x-large;
-    }
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 25pt;
-    }
-    .before-col p{
-        font-size: 18pt;
-    }
-    .call-to-action {
-        font-size: 16pt;
-    }
-    .call-to-action h3{
-        font-size: 28pt;
-    }
-    .service h3, .testimonial h3, .price h3, .FAQ h3, .team-members h3, .footer h3{
-        font-size: 25pt;
-    }
-    .service p, .testimonial p, .price p, .FAQ p, .team-members p, .footer p{
-        font-size: larger;
-    }
-    .line2{
-        left: 220px;
-    }
-    .line3{
-        left: 150px;
-    }
-    .card h5{
-        font-size: xx-large;
-    }
-    .card h6{
-        font-size: larger;
-    }
-    .card p{
-        font-size: x-large;
-    }
-    .firstcol p{
-        font-size: 16pt;
-    }
-    .laptop{
-        width: 710px;
-    }
-    #myBtnContainer{
-        padding-left: 600px;
-    }
-    #myBtnContainer .btn{
-        font-size: x-large;
-    }
-   .card-footer a{
-    font-size: larger;
-   }
-    .card-body li{
-        font-size: x-large;
-    }
-    .acc-button, .acc-body{
-        font-size: x-large;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 23rem;
-    }
-    .emp1{
-        height: 343px;
-    }
-    .emp4{
-        height: 343px;
-    }
-    .middle1{
-        bottom: 110px;
-    }
-    .contacting{
-        font-size: larger;
-    }
-    .line7{
-        left: 170px;
-    }
-   
-    .footer-icon{
-        padding-left: 700px;
-    }
-    .line8{
-        left: 400px;
-        width: 700px;
-    } 
-}
-@media (min-width: 1700px){  
-    .footer-icon{
-        padding-left: 750px;
-    }
-}
-@media (min-width: 1800px){
-    .carousel-item{
-        height: 750px;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 26rem;
-    }
-    .emp1{
-        height: 390px;
-    }
-    .emp4{
-        height: 390px;
-    }
-    .footer-icon{
-        padding-left: 800px;
-    }
-    .line8{
-        width: 900px;
-        left: 450px;
-    }
-}    
-@media (min-width: 1900px){
-    .caption{
-        padding-bottom: 180px;
-    }
-    .read{
-        font-size: xx-large;
-    }
-    .laptop{
-        width: 900px;
-    }
-    .carousel-item{
-        height: 800px;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 27rem;
-    }
-    .emp1{
-        height: 405px;
-    }
-    .emp4{
-        height: 405px;
-    }
-    .footer-icon{
-        padding-left: 850px;
-    }
-    .line8{
-        left: 480px;
-    }
-}   
-@media (min-width:2000px) and (max-width: 2200px){
-     .carousel-item{
-        height: 900px;
-     }
-    .laptop{
-        width: 950px;
-    }
-    .caption h1{
-        font-size: 65pt;
-    }
-    .caption p{
-        font-size: 30pt;
-    }
-    .read{
-        font-size: 30pt;
-    }
-    .about h3{
-        font-size: 35pt;
-    }
-    .about p{
-        font-size: xx-large;
-    }
-    .ptags p{
-        font-size: 25pt;
-    }
-    .more{
-        font-size: 30pt;
-    }
-    .box1 h3{
-        font-size: 30pt;
-    }
-    .box2 h3{
-        font-size: 30pt;
-    }
-    .box3 h3{
-        font-size: 30pt;
-    }
-    .box4 h3{
-        font-size: 30pt;
-    }
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 35pt;
-    }
-    .before-col p{
-        font-size: 25pt;
-    }
-    .call-to-action {
-        font-size: 23pt;
-    }
-    .call-to-action h3{
-        font-size: 38pt;
-    }
-    .service h3, .testimonial h3, .price h3, .faq h3, .team-members h3, .footer h3, .port h3, .blog h3{
-        font-size: 35pt;
-    }
-    .service p, .testimonial p, .price p, .faq p, .team-members p, .footer p, .port p, .blog p{
-        font-size: xx-large;
-    }
-    .card h5{
-        font-size: 30pt;
-    }
-    .card h6{
-        font-size: xx-large;
-    }
-    .card p{
-        font-size: 25pt;
-    }
-    .firstcol h3{
-        font-size: 35pt;
-    }
-    .firstcol p{
-        font-size: 25pt;
-    }
-    #myBtnContainer .btn{
-        font-size: x-large;
-    }
-    #myBtnContainer{
-        margin-left: 130px;
-    }
-   .card-footer a{
-    font-size: xx-large;
-   }
-    .card-body li{
-        font-size: xx-large;
-    }
-    .headers{
-        font-size: 30pt;
-    }
-    .ribbon span{
-        font-size: larger;
-    }
-    .acc-button, .acc-body{
-        font-size: 28pt;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 29rem;
-    }
-    .emp1{
-        height: 435px;
-    }
-    .emp4{
-        height: 435px;
-    }
-    .smalltext{
-        font-size: 20pt;
-    }
-    .contacting{
-        font-size: xx-large;
-    }
-    .contact h5{
-        font-size: 30pt;
-    }
-    .send{
-        width: 300px;
-    }
-    .footer-icon{
-        padding-left: 800px;
-        font-size: 35pt;
-    }
-    .line8{
-        left: 450px;
-        width: 1100px;
-        margin-top: 380px;
-    } 
-    .after{
-        margin-left: 400px;
-    }
-    .line{
-        left: 180px;
-        margin-top: 200px;
-    }
-    .line1{
-        left: 200px;
-    }
-    .line2{
-        left: 250px;
-    }
-    .line3{
-        left: 200px;
-    }
-    .line4{
-        left: 550px;
-    }
-    .line5{
-        left: 170px;
-    }
-    .line6{
-        left: 300px;
-    }
-    .line7{
-        left: 250px;
-    }
-    .box1 .binoculars{
-        font-size: 40pt;
-    }
-    .box2 .cube{
-        font-size: 40pt;
-    }
-    .box3 .sun{
-        font-size: 40pt;
-    }
-    .box4 .command{
-        font-size: 50pt;
-    }
-    .check{
-        font-size: 30pt;
-    }
-    .money, .calendar, .bars{
-        font-size: 50pt;
-    }
-    .review span{
-        font-size: 25pt;
-    }
-    .middle1{
-        bottom: 150px;
-    }
-    .footer-icon a i{
-        font-size: 35pt;
-    }
-}
-@media (min-width: 2300px) and (max-width: 2400px){
-    .carousel-item{
-        height: 950px;
-    }
-    .laptop{
-        width: 1100px;
-    }
-    .caption h1{
-        font-size: 65pt;
-    }
-    .caption p{
-        font-size: 30pt;
-    }
-    .read{
-        font-size: 30pt;
-    }
-    .about h3{
-        font-size: 35pt;
-    }
-    .about p{
-        font-size: xx-large;
-    }
-    .ptags p{
-        font-size: 25pt;
-    }
-    .more{
-        font-size: 30pt;
-    }
-    .box1 h3{
-        font-size: 30pt;
-    }
-    .box2 h3{
-        font-size: 30pt;
-    }
-    .box3 h3{
-        font-size: 30pt;
-    }
-    .box4 h3{
-        font-size: 30pt;
-    }
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 35pt;
-    }
-    .before-col p{
-        font-size: 25pt;
-    }
-    .call-to-action {
-        font-size: 23pt;
-    }
-    .call-to-action h3{
-        font-size: 38pt;
-    }
-    .service h3, .testimonial h3, .price h3, .faq h3, .team-members h3, .footer h3, .port h3, .blog h3{
-        font-size: 35pt;
-    }
-    .service p, .testimonial p, .price p, .faq p, .team-members p, .footer p, .port p, .blog p{
-        font-size: xx-large;
-    }
-    .card h5{
-        font-size: 30pt;
-    }
-    .card h6{
-        font-size: xx-large;
-    }
-    .card p{
-        font-size: 25pt;
-    }
-    .firstcol h3{
-        font-size: 35pt;
-    }
-    .firstcol p{
-        font-size: 25pt;
-    }
-    #myBtnContainer .btn{
-        font-size: x-large;
-    }
-    .card-footer a{
-        font-size: xx-large;
-       }
-    .card-body li{
-        font-size: xx-large;
-    }
-    .headers{
-        font-size: 30pt;
-    }
-    .ribbon span{
-        font-size: larger;
-    }
-    .acc-button, .acc-body{
-        font-size: 28pt;
-    }
-    .smalltext{
-        font-size: 20pt;
-    }
-    .contacting{
-        font-size: xx-large;
-    }
-    .contact h5{
-        font-size: 30pt;
-    }
-    .box1 .binoculars{
-        font-size: 40pt;
-    }
-    .box2 .cube{
-        font-size: 40pt;
-    }
-    .box3 .sun{
-        font-size: 40pt;
-    }
-    .box4 .command{
-        font-size: 50pt;
-    }
-    .check{
-        font-size: 30pt;
-    }
-    .money, .calendar, .bars{
-        font-size: 50pt;
-    }
-    .review span{
-        font-size: 25pt;
-    }
-    .footer-icon a i{
-        font-size: 35pt;
-    }
-    .main{
-        max-width: 2200px;
-    }
-    #myBtnContainer .btn{
-        font-size: 25pt;
-    }
-    #myBtnContainer{
-        padding-left: 900px;
-    }
-    .after{
-        padding-left: 100px;
-    }
-    .chair, .lamp , .honey, .flower, .glasses, .camera, .watch, .wheat, .prod1{
-        width: 600px;
-        height: 500px;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 34rem;
-    }
-    .emp1{
-        height: 518px;
-    }
-    .emp4{
-        height: 518px;
-    }
-    .middle1{
-        bottom: 130px;
-    }
-    .sizing{
-        font-size: xx-large;
-    }
-    .middle1 a{
-        font-size: xx-large;
-    }
-    .send{
-        width: 300px;
-    }
-    .footer-icon{
-        padding-left: 980px;
-        font-size: 35pt;
-    }
-    .line{
-        left: 180px;
-    }
-    .line1{
-        left: 200px;
-    }
-    .line2{
-        left: 250px;
-    }
-    .line3{
-        left: 200px;
-    }
-    .line4{
-        left: 550px;
-    }
-    .line5{
-        left: 170px;
-    }
-    .line6{
-        left: 300px;
-    }
-    .line7{
-        left: 250px;
-    }
-    .line8{
-        left: 540px;
-        width: 1200px;
-        margin-top: 380px;
-    } 
-    .nav-link.active{
-        font-size: 20pt;
-    }
-    .nav-link{
-        font-size: 20pt;
-        margin-left: 50px !important;
-    }
-    .nav-cont .selecao{
-        font-size: 35pt !important;
-    }
-    input{
-        height: 80px;
-    }
-}
-@media (min-width: 2500px) and (max-width: 2600px){
-    .carousel-item{
-        height: 1100px;
-    }
-    .laptop{
-        width: 1250px;
-    }
-    .caption h1{
-        font-size: 65pt;
-    }
-    .caption p{
-        font-size: 30pt;
-    }
-    .read{
-        font-size: 30pt;
-    }
-    .about h3{
-        font-size: 35pt;
-    }
-    .about p{
-        font-size: xx-large;
-    }
-    .ptags p{
-        font-size: 25pt;
-    }
-    .more{
-        font-size: 30pt;
-    }
-    .box1 h3{
-        font-size: 30pt;
-    }
-    .box2 h3{
-        font-size: 30pt;
-    }
-    .box3 h3{
-        font-size: 30pt;
-    }
-    .box4 h3{
-        font-size: 30pt;
-    }
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 35pt;
-    }
-    .before-col p{
-        font-size: 25pt;
-    }
-    .call-to-action {
-        font-size: 23pt;
-    }
-    .call-to-action h3{
-        font-size: 38pt;
-    }
-    .service h3, .testimonial h3, .price h3, .faq h3, .team-members h3, .footer h3, .port h3, .blog h3{
-        font-size: 35pt;
-    }
-    .service p, .testimonial p, .price p, .faq p, .team-members p, .footer p, .port p, .blog p{
-        font-size: xx-large;
-    }
-    .card h5{
-        font-size: 30pt;
-    }
-    .card h6{
-        font-size: xx-large;
-    }
-    .card p{
-        font-size: 25pt;
-    }
-    .firstcol h3{
-        font-size: 35pt;
-    }
-    .firstcol p{
-        font-size: 25pt;
-    }
-    #myBtnContainer .btn{
-        font-size: x-large;
-    }
-    .card-footer a{
-        font-size: xx-large;
-       }
-    .card-body li{
-        font-size: xx-large;
-    }
-    .headers{
-        font-size: 30pt;
-    }
-    .ribbon span{
-        font-size: larger;
-    }
-    .acc-button, .acc-body{
-        font-size: 28pt;
-    }
-    .smalltext{
-        font-size: 20pt;
-    }
-    .contacting{
-        font-size: xx-large;
-    }
-    .contact h5{
-        font-size: 30pt;
-    }
-    .box1 .binoculars{
-        font-size: 40pt;
-    }
-    .box2 .cube{
-        font-size: 40pt;
-    }
-    .box3 .sun{
-        font-size: 40pt;
-    }
-    .box4 .command{
-        font-size: 50pt;
-    }
-    .check{
-        font-size: 30pt;
-    }
-    .money, .calendar, .bars{
-        font-size: 50pt;
-    }
-    .review span{
-        font-size: 25pt;
-    }
-    .footer-icon a i{
-        font-size: 35pt;
-    }
-    .main{
-        max-width: 2200px;
-    }
-    #myBtnContainer .btn{
-        font-size: 25pt;
-    }
-    #myBtnContainer{
-        padding-left: 900px;
-    }
-    .after{
-        padding-left: 200px;
-    }
-    .chair, .lamp , .honey, .flower, .glasses, .camera, .watch, .wheat, .prod1{
-        width: 600px;
-        height: 500px;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 38rem;
-    }
-    .emp1{
-        height: 580px;
-    }
-    .emp4{
-        height: 580px;
-    }
-    .middle1{
-        bottom: 150px;
-    }
-    .text1{
-        width: 400px;
-    }
-    .sizing{
-        font-size: 40px;
-    }
-    .middle1 a{
-        font-size: 40px;
-    }
-    .send{
-        width: 300px;
-    }
-    .footer-icon{
-        padding-left: 1130px;
-        font-size: 35pt;
-    }
-    .line{
-        left: 180px;
-    }
-    .line1{
-        left: 200px;
-    }
-    .line2{
-        left: 250px;
-    }
-    .line3{
-        left: 200px;
-    }
-    .line4{
-        left: 550px;
-    }
-    .line5{
-        left: 170px;
-    }
-    .line6{
-        left: 300px;
-    }
-    .line7{
-        left: 250px;
-    }
-    .line8{
-        left: 630px;
-        width: 1300px;
-        margin-top: 380px;
-    } 
-    .nav-link.active{
-        font-size: 20pt;
-    }
-    .nav-link{
-        font-size: 20pt;
-        margin-left: 50px !important;
-    }
-    .nav-cont .selecao{
-        font-size: 35pt !important;
-    }
-    input{
-        height: 80px;
-    }
-}
-@media (min-width: 2700px) and (max-width: 2800px){
-    .carousel-item{
-        height: 1200px;
-    }
-    .laptop{
-        width: 1300px;
-    }
-    .caption{
-        padding-bottom: 300px;
-    }
-    .caption h1{
-        font-size: 70pt;
-    }
-    .caption p{
-        font-size: 35pt;
-    }
-    .read{
-        font-size: 35pt;
-    }
-    .about h3{
-        font-size: 40pt;
-    }
-    .about p{
-        font-size: 30pt;
-    }
-    .ptags p{
-        font-size: 30pt;
-    }
-    .more{
-        font-size: 35pt;
-    }
-    .box1 h3{
-        font-size: 40pt;
-    }
-    .box2 h3{
-        font-size: 40pt;
-    }
-    .box3 h3{
-        font-size: 40pt;
-    }
-    .box4 h3{
-        font-size: 40pt;
-    }
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 40pt;
-    }
-    .before-col p{
-        font-size: 30pt;
-    }
-    .call-to-action {
-        font-size: 30pt;
-    }
-    .call-to-action h3{
-        font-size: 43pt;
-    }
-    .service h3, .testimonial h3, .price h3, .faq h3, .team-members h3, .footer h3, .port h3, .blog h3{
-        font-size: 40pt;
-    }
-    .service p, .testimonial p, .price p, .faq p, .team-members p, .footer p, .port p, .blog p{
-        font-size: 30pt;
-    }
-    .card h5{
-        font-size: 30pt;
-    }
-    .card h6{
-        font-size: xx-large;
-    }
-    .card p{
-        font-size: 28pt;
-    }
-    .firstcol h3{
-        font-size: 40pt;
-    }
-    .firstcol p{
-        font-size: 30pt;
-    }
-    #myBtnContainer .btn{
-        font-size: 30pt;
-    }
-    .card-footer a{
-        font-size: 30pt;
-       }
-    .card-body li{
-        font-size: 30pt;
-    }
-    .headers{
-        font-size: 35pt;
-    }
-    .ribbon span{
-        font-size: larger;
-    }
-    .acc-button, .acc-body{
-        font-size: 30pt;
-    }
-    .smalltext{
-        font-size: 20pt;
-    }
-    .contacting{
-        font-size: xx-large;
-    }
-    .contacting h3{
-        font-size: 40pt;
-    }
-    .contacting p{
-        font-size: 30pt;
-    }
-    .contact h5{
-        font-size: 35pt;
-    }
-    .box1 .binoculars{
-        font-size: 40pt;
-    }
-    .box2 .cube{
-        font-size: 40pt;
-    }
-    .box3 .sun{
-        font-size: 40pt;
-    }
-    .box4 .command{
-        font-size: 50pt;
-    }
-    .check{
-        font-size: 30pt;
-    }
-    .money, .calendar, .bars{
-        font-size: 50pt;
-    }
-    .review span{
-        font-size: 25pt;
-    }
-    .footer-icon a i{
-        font-size: 35pt;
-    }
-    .main{
-        max-width: 2200px;
-    }
-    #myBtnContainer .btn{
-        font-size: 25pt;
-    }
-    #myBtnContainer{
-        padding-left: 900px;
-    }
-    .after{
-        padding-left: 300px;
-    }
-    .chair, .lamp , .honey, .flower, .glasses, .camera, .watch, .wheat, .prod1{
-        width: 600px;
-        height: 500px;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 40rem;
-    }
-    .emp1{
-        height: 613px;
-    }
-    .emp4{
-        height: 613px;
-    }
-    .middle1{
-        bottom: 150px;
-    }
-    .text1{
-        width: 400px;
-    }
-    .sizing{
-        font-size: 40px;
-    }
-    .middle1 a{
-        font-size: 40px;
-    }
-    .send{
-        width: 300px;
-    }
-    .footer-icon{
-        padding-left: 1170px;
-        font-size: 35pt;
-    }
-    .line{
-        left: 180px;
-    }
-    .line1{
-        left: 200px;
-    }
-    .line2{
-        left: 250px;
-    }
-    .line3{
-        left: 200px;
-    }
-    .line4{
-        left: 550px;
-    }
-    .line5{
-        left: 170px;
-    }
-    .line6{
-        left: 300px;
-    }
-    .line7{
-        left: 250px;
-    }
-    .line8{
-        left: 630px;
-        width: 1300px;
-        margin-top: 380px;
-    } 
-    .nav-link.active{
-        font-size: 20pt;
-    }
-    .nav-link{
-        font-size: 20pt;
-        margin-left: 50px !important;
-    }
-    .nav-cont .selecao{
-        font-size: 35pt !important;
-    }
-    input{
-        height: 80px;
-    }
-}
-@media (min-width: 2900px) and (max-width: 3000px){
-    .carousel-item{
-        height: 1300px;
-    }
-    .laptop{
-        width: 1450px;
-    }
-    .caption{
-        padding-bottom: 300px;
-    }
-    .caption h1{
-        font-size: 70pt;
-    }
-    .caption p{
-        font-size: 35pt;
-    }
-    .read{
-        font-size: 35pt;
-    }
-    .about h3{
-        font-size: 40pt;
-    }
-    .about p{
-        font-size: 30pt;
-    }
-    .ptags p{
-        font-size: 30pt;
-    }
-    .more{
-        font-size: 35pt;
-    }
-    .box1 h3{
-        font-size: 40pt;
-    }
-    .box2 h3{
-        font-size: 40pt;
-    }
-    .box3 h3{
-        font-size: 40pt;
-    }
-    .box4 h3{
-        font-size: 40pt;
-    }
-    
-    .arrow{
-        font-size: 25pt;
-    }
-    .before-col h4{
-        font-size: 40pt;
-    }
-    .before-col p{
-        font-size: 30pt;
-    }
-    .call-to-action {
-        font-size: 30pt;
-    }
-    .call-to-action h3{
-        font-size: 43pt;
-    }
-    .service h3, .testimonial h3, .price h3, .faq h3, .team-members h3, .footer h3, .port h3, .blog h3{
-        font-size: 40pt;
-    }
-    .service p, .testimonial p, .price p, .faq p, .team-members p, .footer p, .port p, .blog p{
-        font-size: 30pt;
-    }
-    .card h5{
-        font-size: 30pt;
-    }
-    .card h6{
-        font-size: xx-large;
-    }
-    .card p{
-        font-size: 28pt;
-    }
-    .firstcol h3{
-        font-size: 40pt;
-    }
-    .firstcol p{
-        font-size: 30pt;
-    }
-    #myBtnContainer .btn{
-        font-size: 30pt;
-    }
-    .card-footer a{
-        font-size: 30pt;
-       }
-    .card-body li{
-        font-size: 30pt;
-    }
-    .headers{
-        font-size: 35pt;
-    }
-    .ribbon span{
-        font-size: larger;
-    }
-    .acc-button, .acc-body{
-        font-size: 30pt;
-    }
-    .smalltext{
-        font-size: 20pt;
-    }
-    .contacting{
-        font-size: xx-large;
-    }
-    .contacting h3{
-        font-size: 40pt;
-    }
-    .contacting p{
-        font-size: 30pt;
-    }
-    .contact h5{
-        font-size: 35pt;
-    }
-    .box1 .binoculars{
-        font-size: 50pt ;
-    }
-    .box2 .cube{
-        font-size: 50pt ;
-    }
-    .box3 .sun{
-        font-size: 50pt ;
-    }
-    .box4 .command{
-        font-size: 60pt ;
-    }
-    .check{
-        font-size: 50px ;
-    }
-    .money, .calendar, .bars{
-        font-size: 60pt ;
-    }
-    .circle1 .circle{
-        font-size: 50px;
-    }
-    .review span{
-        font-size: 25pt;
-    }
-    .footer-icon a i{
-        font-size: 35pt;
-    }
-    .main{
-        max-width: 2800px;
-    }
-    #myBtnContainer .btn{
-        font-size: 35pt;
-    }
-    #myBtnContainer{
-        padding-left: 1100px;
-    }
-    .after{
-        padding-left: 250px;
-    }
-    .chair, .lamp , .honey, .flower, .glasses, .camera, .watch, .wheat, .prod1{
-        width: 800px;
-        height: 700px;
-    }
-    .card1, .card2, .card3, .card4{
-        width: 45rem;
-    }
-    .emp1{
-        height: 690px;
-    }
-    .emp4{
-        height: 690px;
-    }
-    .middle1{
-        bottom: 150px;
-    }
-    .text1{
-        width: 400px;
-    }
-    .sizing{
-        font-size: 40px;
-    }
-    .middle1 a{
-        font-size: 40px;
-    }
-    .send{
-        width: 300px;
-    }
-    .footer-icon{
-        padding-left: 1320px;
-        font-size: 35pt;
-    }
-    .line{
-        left: 190px;
-    }
-    .line1{
-        left: 220px;
-    }
-    .line2{
-        left: 290px;
-    }
-    .line3{
-        left: 250px;
-    }
-    .line4{
-        left: 570px;
-    }
-    .line5{
-        left: 190px;
-    }
-    .line6{
-        left: 350px;
-    }
-    .line7{
-        left: 270px;
-    }
-    .line8{
-        left: 680px;
-        width: 1600px;
-        margin-top: 380px;
-    } 
-    .nav-link.active{
-        font-size: 20pt;
-    }
-    .nav-link{
-        font-size: 20pt;
-        margin-left: 50px !important;
-    }
-    .nav-cont .selecao{
-        font-size: 35pt !important;
-    }
-    input{
-        height: 80px;
-    }
-} */
